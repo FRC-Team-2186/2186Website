@@ -36,12 +36,14 @@ export function useCountdown(targetDate: string): TimeLeft {
   });
 
   useEffect(() => {
-    setTimeLeft(calculateTimeLeft(targetDate));
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft(targetDate));
-    }, 1000);
+    const tick = () => setTimeLeft(calculateTimeLeft(targetDate));
+    const immediate = window.setTimeout(tick, 0);
+    const timer = window.setInterval(tick, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      window.clearTimeout(immediate);
+      window.clearInterval(timer);
+    };
   }, [targetDate]);
 
   return timeLeft;
