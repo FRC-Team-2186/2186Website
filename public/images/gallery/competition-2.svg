@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#12161a"/>
+      <stop offset="1" stop-color="#2c3539"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <path d="M0 420 Q200 300 400 380 T800 300 L800 600 L0 600Z" fill="#ff5a1f" fill-opacity=".15"/>
+  <circle cx="640" cy="140" r="90" fill="#ff5a1f" fill-opacity=".2"/>
+  <text x="40" y="560" fill="#eef2f5" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Pit Strategy</text>
+</svg>
