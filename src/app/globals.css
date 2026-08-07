@@ -6,8 +6,10 @@
   --steel-850: #12161a;
   --steel-800: #1a2024;
   --steel-700: #2c3539;
+  --steel-600: #3d4a50;
   --steel-500: #708090;
   --steel-400: #9aa7b2;
+  --steel-300: #b8c2ca;
   --steel-200: #d5dde3;
   --steel-100: #eef2f5;
 
@@ -37,8 +39,10 @@
   --color-steel-850: var(--steel-850);
   --color-steel-800: var(--steel-800);
   --color-steel-700: var(--steel-700);
+  --color-steel-600: var(--steel-600);
   --color-steel-500: var(--steel-500);
   --color-steel-400: var(--steel-400);
+  --color-steel-300: var(--steel-300);
   --color-steel-200: var(--steel-200);
   --color-steel-100: var(--steel-100);
   --color-electric: var(--electric);

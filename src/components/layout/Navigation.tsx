@@ -34,22 +34,29 @@ export function Navigation() {
   }, [pathname]);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
     };
   }, [open]);
 
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-steel-500/30 bg-steel-900/90 backdrop-blur-md"
+        "fixed inset-x-0 top-0 z-[60] transition-all duration-300",
+        scrolled || open
+          ? "border-b border-steel-500/30 bg-steel-900/95 backdrop-blur-md"
           : "bg-transparent"
       )}
     >
-      <nav className="section-pad container-max flex h-16 items-center justify-between md:h-[4.5rem]">
+      <nav className="section-pad container-max relative z-[61] flex h-16 items-center justify-between md:h-[4.5rem]">
         <Link href="/" className="group flex items-center gap-3">
           <span className="relative flex h-9 w-9 items-center justify-center rounded-md border border-electric/40 bg-steel-800 font-display text-sm font-bold text-electric transition group-hover:glow-electric">
             2186
@@ -99,9 +106,10 @@ export function Navigation() {
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-steel-500/40 text-steel-100 lg:hidden"
+          className="relative z-[62] inline-flex h-11 w-11 items-center justify-center rounded-md border border-steel-500/40 bg-steel-850/80 text-steel-100 lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
+          aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -110,39 +118,54 @@ export function Navigation() {
 
       <AnimatePresence>
         {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2 }}
-            className="border-b border-steel-500/30 bg-steel-900/98 backdrop-blur-md lg:hidden"
-          >
-            <ul className="section-pad container-max flex flex-col gap-1 py-4">
-              {NAV_LINKS.map((link) => {
-                const active = pathname === link.href;
-                return (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className={cn(
-                        "block rounded-md px-3 py-3 text-base font-medium",
-                        active
-                          ? "bg-electric/10 text-electric"
-                          : "text-steel-200 hover:bg-steel-800"
-                      )}
-                    >
-                      {link.label}
+          <>
+            <motion.button
+              type="button"
+              aria-label="Close menu overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 top-16 z-[58] bg-steel-900/70 lg:hidden"
+              onClick={() => setOpen(false)}
+            />
+            <motion.div
+              id="mobile-nav"
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.2 }}
+              className="absolute inset-x-0 top-full z-[59] border-b border-steel-500/30 bg-steel-900 shadow-xl lg:hidden"
+            >
+              <ul className="section-pad container-max flex flex-col gap-1 py-4">
+                {NAV_LINKS.map((link) => {
+                  const active = pathname === link.href;
+                  return (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          "block rounded-md px-3 py-3 text-base font-medium",
+                          active
+                            ? "bg-electric/10 text-electric"
+                            : "text-steel-200 hover:bg-steel-800"
+                        )}
+                        onClick={() => setOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+                <li className="pt-2">
+                  <Button asChild className="w-full" variant="orange">
+                    <Link href="/sponsors" onClick={() => setOpen(false)}>
+                      Sponsor Us
                     </Link>
-                  </li>
-                );
-              })}
-              <li className="pt-2">
-                <Button asChild className="w-full" variant="orange">
-                  <Link href="/sponsors">Sponsor Us</Link>
-                </Button>
-              </li>
-            </ul>
-          </motion.div>
+                  </Button>
+                </li>
+              </ul>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

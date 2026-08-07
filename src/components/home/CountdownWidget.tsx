@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Timer } from "lucide-react";
 import { useCountdown } from "@/hooks/useCountdown";
@@ -12,7 +13,10 @@ interface CountdownWidgetProps {
 function Unit({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex min-w-[4.5rem] flex-col items-center rounded-md border border-steel-500/35 bg-steel-900/70 px-3 py-3 sm:min-w-[5.5rem]">
-      <span className="font-display text-2xl font-bold tabular-nums text-electric sm:text-3xl">
+      <span
+        className="font-display text-2xl font-bold tabular-nums text-electric sm:text-3xl"
+        suppressHydrationWarning
+      >
         {String(value).padStart(2, "0")}
       </span>
       <span className="mt-1 text-[10px] uppercase tracking-[0.2em] text-steel-500">
@@ -24,6 +28,11 @@ function Unit({ value, label }: { value: number; label: string }) {
 
 export function CountdownWidget({ countdown }: CountdownWidgetProps) {
   const time = useCountdown(countdown.targetDate);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section className="section-pad py-16">
@@ -50,7 +59,14 @@ export function CountdownWidget({ countdown }: CountdownWidgetProps) {
             </p>
           </div>
 
-          {time.expired ? (
+          {!mounted ? (
+            <div className="flex flex-wrap gap-3" aria-hidden>
+              <Unit value={0} label="Days" />
+              <Unit value={0} label="Hours" />
+              <Unit value={0} label="Mins" />
+              <Unit value={0} label="Secs" />
+            </div>
+          ) : time.expired ? (
             <p className="font-display text-xl font-semibold text-electric">
               Season is live — go build!
             </p>

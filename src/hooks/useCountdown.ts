@@ -27,11 +27,16 @@ function calculateTimeLeft(targetDate: string): TimeLeft {
 }
 
 export function useCountdown(targetDate: string): TimeLeft {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() =>
-    calculateTimeLeft(targetDate)
-  );
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    expired: false,
+  });
 
   useEffect(() => {
+    setTimeLeft(calculateTimeLeft(targetDate));
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft(targetDate));
     }, 1000);
