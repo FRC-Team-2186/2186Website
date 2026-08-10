@@ -1,0 +1,366 @@
+{
+  "team": {
+    "number": 2186,
+    "name": "Dogs of Steel",
+    "school": "Westfield High School",
+    "location": "Chantilly, VA",
+    "district": "FIRST Chesapeake",
+    "rookieYear": 2007,
+    "mission": "Dogs of Steel inspires students to become leaders in STEM through hands-on robotics, collaboration, and gracious professionalism. We build competitive robots — and the next generation of engineers, designers, and innovators.",
+    "history": "Founded in 2007 at Westfield High School, FRC Team 2186 Dogs of Steel has competed for nearly two decades in the FIRST Chesapeake district. From our early seasons to recent district event victories, we combine mechanical grit with software precision and a strong outreach culture that brings STEM to our community.",
+    "socials": {
+      "instagram": "https://www.instagram.com/frc2186/",
+      "youtube": "https://www.youtube.com/@DogsOfSteel2186",
+      "github": "https://github.com/FRC-Team-2186",
+      "tba": "https://www.thebluealliance.com/team/2186",
+      "email": "mailto:frc2186@fcps.edu"
+    },
+    "contact": {
+      "headMentors": [
+        {
+          "name": "Head Mentor",
+          "role": "Lead Mentor",
+          "email": "frc2186@fcps.edu"
+        }
+      ],
+      "finance": [
+        {
+          "name": "Finance Lead",
+          "role": "Business / Finance",
+          "email": "frc2186@fcps.edu"
+        }
+      ]
+    }
+  },
+  "stats": [
+    {
+      "id": "years",
+      "label": "Years of Innovation",
+      "value": 17,
+      "suffix": "+",
+      "description": "Rookie Year: 2007"
+    },
+    {
+      "id": "members",
+      "label": "Active Members & Mentors",
+      "value": 45,
+      "suffix": "+",
+      "description": "Students & adult mentors"
+    },
+    {
+      "id": "wins",
+      "label": "District & Regional Wins",
+      "value": 2,
+      "suffix": "+",
+      "description": "Including Bethesda 2026"
+    }
+  ],
+  "countdown": {
+    "label": "Countdown to Kickoff",
+    "targetDate": "2027-01-09T10:00:00-05:00",
+    "description": "2027 FRC Season Kickoff"
+  },
+  "quickLinks": [
+    {
+      "id": "sponsor",
+      "label": "Sponsor Us",
+      "href": "/sponsors",
+      "description": "Partner with Dogs of Steel and invest in STEM."
+    },
+    {
+      "id": "about",
+      "label": "About the Team",
+      "href": "/about",
+      "description": "Meet our mission, history, and subteams."
+    },
+    {
+      "id": "robots",
+      "label": "Our Robots",
+      "href": "/robots",
+      "description": "Explore season robots, specs, and match history."
+    }
+  ],
+  "subteams": [
+    {
+      "id": "mechanical",
+      "name": "Mechanical",
+      "description": "Designs, fabricates, and assembles the robot chassis, mechanisms, and structural systems.",
+      "icon": "wrench"
+    },
+    {
+      "id": "electrical",
+      "name": "Electrical",
+      "description": "Wires power distribution, sensors, and pneumatics for reliable match-day performance.",
+      "icon": "zap"
+    },
+    {
+      "id": "software",
+      "name": "Software",
+      "description": "Programs drive control, autonomous routines, vision, and telemetry systems.",
+      "icon": "code"
+    },
+    {
+      "id": "business",
+      "name": "Business / Strategy",
+      "description": "Manages sponsorships, outreach, scouting, and team operations.",
+      "icon": "briefcase"
+    }
+  ],
+  "leadership": [
+    {
+      "id": "mentor-1",
+      "name": "Lead Mentor",
+      "role": "Head Mentor",
+      "type": "mentor",
+      "bio": "Guides team strategy, safety, and mentorship across all subteams."
+    },
+    {
+      "id": "mentor-2",
+      "name": "Engineering Mentor",
+      "role": "Mechanical Mentor",
+      "type": "mentor",
+      "bio": "Supports CAD, fabrication, and mechanism design."
+    },
+    {
+      "id": "student-1",
+      "name": "Team Captain",
+      "role": "Student Captain",
+      "type": "student",
+      "bio": "Coordinates build season priorities and competition readiness."
+    },
+    {
+      "id": "student-2",
+      "name": "Drive Coach",
+      "role": "Drive Team Lead",
+      "type": "student",
+      "bio": "Leads drive practice, strategy, and pit communication."
+    },
+    {
+      "id": "student-3",
+      "name": "Software Lead",
+      "role": "Software Lead",
+      "type": "student",
+      "bio": "Owns robot code architecture and autonomous development."
+    },
+    {
+      "id": "student-4",
+      "name": "Business Lead",
+      "role": "Business Lead",
+      "type": "student",
+      "bio": "Runs sponsor outreach, budgeting, and community events."
+    }
+  ],
+  "robots": [
+    {
+      "id": "2026",
+      "year": 2026,
+      "name": "Steelhound",
+      "game": "REBUILT",
+      "description": "Our 2026 competition robot — district event winner at Bethesda MD.",
+      "image": "/images/robots/2026-placeholder.svg",
+      "specs": {
+        "drivebase": "Swerve Drive",
+        "intake": "Ground + Station Intake",
+        "endEffector": "Multi-gamepiece Manipulator",
+        "weight": "~120 lbs"
+      },
+      "tbaUrl": "https://www.thebluealliance.com/team/2186/2026",
+      "awards": ["FCH District Bethesda MD Event Winner"]
+    },
+    {
+      "id": "2025",
+      "year": 2025,
+      "name": "Greyhound",
+      "game": "REEFSCAPE",
+      "description": "2025 robot Greyhound — Alexandria District Event Finalist.",
+      "image": "/images/robots/2025-placeholder.svg",
+      "specs": {
+        "drivebase": "Swerve Drive",
+        "intake": "Coral Intake",
+        "endEffector": "Elevator + Coral Manipulator",
+        "weight": "~115 lbs"
+      },
+      "tbaUrl": "https://www.thebluealliance.com/team/2186/2025",
+      "awards": ["CHS District Alexandria VA Event Finalist"]
+    },
+    {
+      "id": "2024",
+      "year": 2024,
+      "name": "Forge",
+      "game": "CRESCENDO",
+      "description": "CRESCENDO season robot built for note intake, shooting, and climbing.",
+      "image": "/images/robots/2024-placeholder.svg",
+      "specs": {
+        "drivebase": "West Coast Drive",
+        "intake": "Floor Note Intake",
+        "endEffector": "Flywheel Shooter + Climber"
+      },
+      "tbaUrl": "https://www.thebluealliance.com/team/2186/2024"
+    },
+    {
+      "id": "2023",
+      "year": 2023,
+      "name": "Volt",
+      "game": "CHARGED UP",
+      "description": "CHARGED UP robot focused on cone/cube scoring and charge station balance.",
+      "image": "/images/robots/2023-placeholder.svg",
+      "specs": {
+        "drivebase": "West Coast Drive",
+        "intake": "Dual Gamepiece Intake",
+        "endEffector": "Arm + Gripper"
+      },
+      "tbaUrl": "https://www.thebluealliance.com/team/2186/2023"
+    },
+    {
+      "id": "2022",
+      "year": 2022,
+      "name": "Reactor",
+      "game": "RAPID REACT",
+      "description": "RAPID REACT cargo bot with hangar climb capability.",
+      "image": "/images/robots/2022-placeholder.svg",
+      "specs": {
+        "drivebase": "West Coast Drive",
+        "intake": "Cargo Intake",
+        "endEffector": "Shooter + Climber"
+      },
+      "tbaUrl": "https://www.thebluealliance.com/team/2186/2022"
+    }
+  ],
+  "sponsorTiers": [
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "amount": "$5,000+",
+      "color": "#E8EEF2",
+      "benefits": [
+        "Large logo on robot & team shirts",
+        "Homepage & sponsor page feature",
+        "Pit banner placement",
+        "Invite to demos & competition events",
+        "Social media shoutouts all season"
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "amount": "$2,500+",
+      "color": "#D4AF37",
+      "benefits": [
+        "Logo on robot & shirts",
+        "Sponsor page listing",
+        "Event recognition",
+        "Season social media mentions"
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "amount": "$1,000+",
+      "color": "#C0C7CE",
+      "benefits": [
+        "Logo on team shirts",
+        "Website listing",
+        "Thank-you recognition"
+      ]
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "amount": "$500+",
+      "color": "#CD7F32",
+      "benefits": [
+        "Website listing",
+        "End-of-season thank you"
+      ]
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "leidos",
+      "name": "Leidos",
+      "tier": "platinum",
+      "website": "https://www.leidos.com"
+    },
+    {
+      "id": "boeing",
+      "name": "Boeing",
+      "tier": "platinum",
+      "website": "https://www.boeing.com"
+    },
+    {
+      "id": "bae",
+      "name": "BAE Systems",
+      "tier": "gold",
+      "website": "https://www.baesystems.com"
+    },
+    {
+      "id": "lockheed",
+      "name": "Lockheed Martin",
+      "tier": "gold",
+      "website": "https://www.lockheedmartin.com"
+    },
+    {
+      "id": "icf",
+      "name": "ICF",
+      "tier": "silver",
+      "website": "https://www.icf.com"
+    },
+    {
+      "id": "westfield",
+      "name": "Westfield High School",
+      "tier": "partner",
+      "website": "https://westfieldhs.fcps.edu"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Bethesda District Event 2026",
+      "type": "photo",
+      "src": "/images/gallery/competition-1.svg",
+      "tags": ["competitions"],
+      "year": 2026
+    },
+    {
+      "id": "g2",
+      "title": "Build Season Fabrication",
+      "type": "photo",
+      "src": "/images/gallery/build-1.svg",
+      "tags": ["build-season"],
+      "year": 2026
+    },
+    {
+      "id": "g3",
+      "title": "Community Outreach Demo",
+      "type": "photo",
+      "src": "/images/gallery/outreach-1.svg",
+      "tags": ["outreach"],
+      "year": 2025
+    },
+    {
+      "id": "g4",
+      "title": "Pit Crew Strategy",
+      "type": "photo",
+      "src": "/images/gallery/competition-2.svg",
+      "tags": ["competitions", "team"],
+      "year": 2026
+    },
+    {
+      "id": "g5",
+      "title": "CAD Design Night",
+      "type": "photo",
+      "src": "/images/gallery/build-2.svg",
+      "tags": ["build-season", "team"],
+      "year": 2025
+    },
+    {
+      "id": "g6",
+      "title": "STEM Fair Outreach",
+      "type": "photo",
+      "src": "/images/gallery/outreach-2.svg",
+      "tags": ["outreach"],
+      "year": 2025
+    }
+  ],
+  "sponsorPacketUrl": "/docs/sponsor-packet.pdf"
+}

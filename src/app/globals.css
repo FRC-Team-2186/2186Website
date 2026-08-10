@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand palette — Dogs of Steel */
+  --steel-900: #0b0e10;
+  --steel-850: #12161a;
+  --steel-800: #1a2024;
+  --steel-700: #2c3539;
+  --steel-600: #3d4a50;
+  --steel-500: #708090;
+  --steel-400: #9aa7b2;
+  --steel-300: #b8c2ca;
+  --steel-200: #d5dde3;
+  --steel-100: #eef2f5;
+
+  --electric: #00d2ff;
+  --electric-deep: #0066ff;
+  --neon-orange: #ff5a1f;
+  --neon-orange-soft: #ff8a4c;
+
+  --background: var(--steel-900);
+  --foreground: var(--steel-100);
+  --muted: var(--steel-500);
+  --card: var(--steel-800);
+  --border: rgba(112, 128, 144, 0.35);
+  --ring: var(--electric);
+
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-dm-sans);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-steel-900: var(--steel-900);
+  --color-steel-850: var(--steel-850);
+  --color-steel-800: var(--steel-800);
+  --color-steel-700: var(--steel-700);
+  --color-steel-600: var(--steel-600);
+  --color-steel-500: var(--steel-500);
+  --color-steel-400: var(--steel-400);
+  --color-steel-300: var(--steel-300);
+  --color-steel-200: var(--steel-200);
+  --color-steel-100: var(--steel-100);
+  --color-electric: var(--electric);
+  --color-electric-deep: var(--electric-deep);
+  --color-neon-orange: var(--neon-orange);
+  --color-neon-orange-soft: var(--neon-orange-soft);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Metallic mesh atmosphere */
+.bg-steel-mesh {
+  background-color: var(--steel-900);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 210, 255, 0.18), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(255, 90, 31, 0.08), transparent),
+    linear-gradient(180deg, rgba(44, 53, 57, 0.4) 0%, transparent 40%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 47px,
+      rgba(112, 128, 144, 0.04) 47px,
+      rgba(112, 128, 144, 0.04) 48px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 47px,
+      rgba(112, 128, 144, 0.04) 47px,
+      rgba(112, 128, 144, 0.04) 48px
+    );
+}
+
+.bg-hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(11, 14, 16, 0.55) 0%, rgba(11, 14, 16, 0.75) 55%, rgba(11, 14, 16, 0.98) 100%),
+    linear-gradient(90deg, rgba(11, 14, 16, 0.7) 0%, transparent 50%, rgba(11, 14, 16, 0.4) 100%);
+}
+
+.text-gradient-electric {
+  background: linear-gradient(135deg, #ffffff 0%, var(--electric) 50%, var(--electric-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-steel {
+  background: linear-gradient(135deg, #ffffff 0%, var(--steel-400) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-electric {
+  box-shadow: 0 0 24px rgba(0, 210, 255, 0.25);
+}
+
+.glow-orange {
+  box-shadow: 0 0 24px rgba(255, 90, 31, 0.3);
+}
+
+.section-pad {
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-pad {
+    padding-inline: 3rem;
+  }
+}
+
+.container-max {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+}
+
+/* Focus rings */
+:focus-visible {
+  outline: 2px solid var(--electric);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 210, 255, 0.35);
+  color: white;
+}
