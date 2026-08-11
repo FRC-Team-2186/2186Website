@@ -46,7 +46,7 @@ export function Hero({ team }: HeroProps) {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-electric"
+              className="mb-4 text-sm font-bold uppercase tracking-[0.35em] sm:text-base text-electric"
             >
               {team.school} · {team.location}
             </motion.p>
@@ -122,7 +122,7 @@ export function Hero({ team }: HeroProps) {
         className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1 text-steel-500 transition hover:text-electric"
         aria-label="Scroll to stats"
       >
-        <span className="text-[10px] uppercase tracking-[0.25em]">Scroll</span>
+        <span className="text-xs font-semibold uppercase tracking-[0.25em] sm:text-sm">Scroll</span>
         <motion.span
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.6, repeat: Infinity }}

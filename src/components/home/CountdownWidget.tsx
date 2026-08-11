@@ -19,7 +19,7 @@ function Unit({ value, label }: { value: number; label: string }) {
       >
         {String(value).padStart(2, "0")}
       </span>
-      <span className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-steel-500 sm:text-sm">
+      <span className="mt-2 text-sm font-bold uppercase tracking-[0.2em] text-steel-500 sm:text-base">
         {label}
       </span>
     </div>
@@ -48,7 +48,7 @@ export function CountdownWidget({ countdown }: CountdownWidgetProps) {
           <div className="max-w-md">
             <div className="mb-3 inline-flex items-center gap-2 text-neon-orange">
               <Timer className="h-4 w-4" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em]">
+              <span className="text-sm font-bold uppercase tracking-[0.2em] sm:text-base">
                 {countdown.label}
               </span>
             </div>

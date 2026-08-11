@@ -24,7 +24,7 @@ export default function ContactPage() {
   return (
     <div className="section-pad pb-20 pt-28">
       <div className="container-max">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-electric">
+        <p className="text-sm font-bold uppercase tracking-[0.3em] sm:text-base text-electric">
           Get in Touch
         </p>
         <h1 className="font-display mt-3 text-4xl font-bold text-steel-100 sm:text-5xl">
@@ -135,7 +135,7 @@ function SocialChip({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-md border border-steel-500/40 px-3 py-2 text-sm text-steel-300 transition hover:border-electric/50 hover:text-electric"
+      className="inline-flex items-center gap-2 rounded-md border border-steel-500/40 px-3 py-2 text-base text-steel-300 transition hover:border-electric/50 hover:text-electric"
     >
       {children}
       {label}

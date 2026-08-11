@@ -19,7 +19,7 @@ export default function SponsorsPage() {
   return (
     <div className="section-pad pb-20 pt-28">
       <div className="container-max">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-electric">
+        <p className="text-sm font-bold uppercase tracking-[0.3em] sm:text-base text-electric">
           Partners
         </p>
         <h1 className="font-display mt-3 max-w-3xl text-4xl font-bold text-steel-100 sm:text-5xl">

@@ -33,7 +33,7 @@ export function Footer() {
               <p className="font-display text-lg font-bold text-steel-100">
                 Dogs of Steel
               </p>
-              <p className="text-xs font-semibold text-steel-500">
+              <p className="text-sm font-semibold text-steel-500">
                 {team.school} · {team.location}
               </p>
             </div>
@@ -45,7 +45,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-sm font-semibold uppercase tracking-[0.15em] text-steel-300">
+          <h3 className="font-display text-base font-bold uppercase tracking-[0.15em] text-steel-300">
             Navigate
           </h3>
           <ul className="mt-4 space-y-2">
@@ -53,7 +53,7 @@ export function Footer() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-sm text-steel-400 transition hover:text-electric"
+                  className="text-base text-steel-400 transition hover:text-electric"
                 >
                   {link.label}
                 </Link>
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-sm font-semibold uppercase tracking-[0.15em] text-steel-300">
+          <h3 className="font-display text-base font-bold uppercase tracking-[0.15em] text-steel-300">
             Contact
           </h3>
           <div className="mt-4 flex flex-wrap gap-3">
@@ -100,7 +100,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-steel-500/20">
-        <div className="section-pad container-max flex flex-col gap-2 py-5 text-xs text-steel-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="section-pad container-max flex flex-col gap-2 py-5 text-sm text-steel-500 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} FRC Team {team.number} — {team.name}. All rights reserved.
           </p>
