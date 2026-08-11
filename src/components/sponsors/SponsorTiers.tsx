@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import type { SponsorTier } from "@/lib/types";
+import { Button } from "@/components/ui/button";
 
 interface SponsorTiersProps {
   tiers: SponsorTier[];
@@ -10,7 +12,7 @@ interface SponsorTiersProps {
 
 export function SponsorTiers({ tiers }: SponsorTiersProps) {
   return (
-    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    <div className="grid gap-6 md:grid-cols-3">
       {tiers.map((tier, index) => (
         <motion.div
           key={tier.id}
@@ -24,10 +26,10 @@ export function SponsorTiers({ tiers }: SponsorTiersProps) {
             className="mb-1 h-1 w-12 rounded-full"
             style={{ backgroundColor: tier.color }}
           />
-          <h3 className="font-display mt-3 text-2xl font-bold text-steel-100 sm:text-3xl">
+          <h3 className="font-display mt-3 text-2xl font-bold uppercase tracking-wide text-steel-100 sm:text-3xl">
             {tier.name}
           </h3>
-          <p className="mt-1 text-base font-semibold text-electric sm:text-lg">
+          <p className="mt-2 text-base font-semibold text-electric sm:text-lg">
             {tier.amount}
           </p>
           <ul className="mt-5 flex-1 space-y-3">
@@ -41,6 +43,9 @@ export function SponsorTiers({ tiers }: SponsorTiersProps) {
               </li>
             ))}
           </ul>
+          <Button asChild variant="orange" size="lg" className="mt-8 w-full">
+            <Link href="/contact">Sponsor Now</Link>
+          </Button>
         </motion.div>
       ))}
     </div>

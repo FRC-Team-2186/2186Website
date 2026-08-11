@@ -8,7 +8,7 @@ interface SponsorGridProps {
   title?: string;
 }
 
-const TIER_ORDER = ["platinum", "gold", "silver", "bronze", "partner"] as const;
+const TIER_ORDER = ["gold", "silver", "bronze", "partner"] as const;
 
 export function SponsorGrid({
   sponsors,
