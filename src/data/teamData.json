@@ -120,42 +120,42 @@
       "name": "Roman Lowkis",
       "role": "Lead Mentor",
       "type": "mentor",
-      "bio": ""
+      "bio": "Guides team strategy, safety, and mentorship across all subteams."
     },
     {
       "id": "mentor-2",
       "name": "Beverly Lesser",
       "role": "Lead Mentor",
       "type": "mentor",
-      "bio": ""
+      "bio": "Guides team strategy, safety, and mentorship across all subteams."
     },
     {
       "id": "mentor-3",
       "name": "Kenny Raisbeck",
       "role": "Engineering Mentor",
       "type": "mentor",
-      "bio": ""
+      "bio": "Supports CAD, fabrication, and mechanism design."
     },
     {
       "id": "mentor-4",
       "name": "Sindhura Mente",
       "role": "Software Mentor",
       "type": "mentor",
-      "bio": ""
+      "bio": "Mentors robot code architecture, controls, and autonomous development."
     },
     {
       "id": "mentor-5",
       "name": "Dave Monachello",
       "role": "Software Mentor",
       "type": "mentor",
-      "bio": ""
+      "bio": "Mentors robot code architecture, controls, and autonomous development."
     },
     {
       "id": "mentor-6",
       "name": "Jeanette Monachello",
       "role": "Electrical Mentor",
       "type": "mentor",
-      "bio": ""
+      "bio": "Supports wiring, power distribution, sensors, and electrical reliability."
     }
   ],
   "robots": [
