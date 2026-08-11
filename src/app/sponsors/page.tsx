@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Download, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SponsorTiers } from "@/components/sponsors/SponsorTiers";
 import { SponsorGrid } from "@/components/sponsors/SponsorGrid";
 import { Button } from "@/components/ui/button";
@@ -33,12 +33,6 @@ export default function SponsorsPage() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" variant="orange">
-            <a href={data.sponsorPacketUrl} download>
-              <Download className="h-4 w-4" />
-              Download Sponsor Packet (PDF)
-            </a>
-          </Button>
-          <Button asChild size="lg" variant="outline">
             <Link href="/contact">
               <Mail className="h-4 w-4" />
               Donate / Contact Finance
