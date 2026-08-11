@@ -190,48 +190,6 @@
       },
       "tbaUrl": "https://www.thebluealliance.com/team/2186/2025",
       "awards": ["CHS District Alexandria VA Event Finalist"]
-    },
-    {
-      "id": "2024",
-      "year": 2024,
-      "name": "2024 Robot",
-      "game": "CRESCENDO",
-      "description": "CRESCENDO season robot built for note intake, shooting, and climbing.",
-      "image": "/images/robots/2024-placeholder.svg",
-      "specs": {
-        "drivebase": "West Coast Drive",
-        "intake": "Floor Note Intake",
-        "endEffector": "Flywheel Shooter + Climber"
-      },
-      "tbaUrl": "https://www.thebluealliance.com/team/2186/2024"
-    },
-    {
-      "id": "2023",
-      "year": 2023,
-      "name": "2023 Robot",
-      "game": "CHARGED UP",
-      "description": "CHARGED UP robot focused on cone/cube scoring and charge station balance.",
-      "image": "/images/robots/2023-placeholder.svg",
-      "specs": {
-        "drivebase": "West Coast Drive",
-        "intake": "Dual Gamepiece Intake",
-        "endEffector": "Arm + Gripper"
-      },
-      "tbaUrl": "https://www.thebluealliance.com/team/2186/2023"
-    },
-    {
-      "id": "2022",
-      "year": 2022,
-      "name": "2022 Robot",
-      "game": "RAPID REACT",
-      "description": "RAPID REACT cargo bot with hangar climb capability.",
-      "image": "/images/robots/2022-placeholder.svg",
-      "specs": {
-        "drivebase": "West Coast Drive",
-        "intake": "Cargo Intake",
-        "endEffector": "Shooter + Climber"
-      },
-      "tbaUrl": "https://www.thebluealliance.com/team/2186/2022"
     }
   ],
   "sponsorTiers": [

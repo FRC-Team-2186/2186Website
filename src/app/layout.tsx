@@ -31,6 +31,23 @@ export const metadata: Metadata = {
     "FIRST Robotics",
     "Chantilly",
   ],
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }, { url: "/favicon.ico" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
+  openGraph: {
+    title: "FRC 2186 Dogs of Steel",
+    description:
+      "Official website of FRC Team 2186 Dogs of Steel — Westfield High School, Chantilly VA.",
+    images: [
+      {
+        url: "/images/gallery/logo-3009955608_5f67a053aab5b.png",
+        width: 340,
+        height: 340,
+        alt: "Dogs of Steel team logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
