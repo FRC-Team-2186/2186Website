@@ -39,9 +39,9 @@ export function Hero({ team }: HeroProps) {
         />
       </div>
 
-      <div className="relative section-pad container-max flex min-h-[100svh] flex-col justify-center pb-24 pt-28">
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-10 lg:gap-14">
-          <div className="min-w-0 flex-1">
+      <div className="relative flex min-h-[100svh] flex-col justify-center px-4 pb-24 pt-28 sm:px-6 md:px-8 lg:px-10 xl:pl-14 xl:pr-8">
+        <div className="mx-auto flex w-full max-w-[96rem] flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-6 lg:gap-8">
+          <div className="min-w-0 flex-1 md:max-w-[48%] lg:max-w-[44%] xl:max-w-[40%]">
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -55,13 +55,13 @@ export function Hero({ team }: HeroProps) {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display max-w-4xl overflow-visible text-5xl font-bold leading-[1.05] tracking-tight text-steel-100 sm:text-6xl md:text-7xl lg:text-8xl"
+              className="font-display overflow-visible text-5xl font-bold leading-[1.05] tracking-tight text-steel-100 sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl"
             >
               {/* Extra inline padding prevents gradient/clipping of edge glyphs (e.g. G) */}
               <span className="block overflow-visible py-1 pr-[0.12em] text-gradient-steel">
                 Dogs of Steel
               </span>
-              <span className="mt-2 block text-2xl font-semibold text-steel-400 sm:text-3xl md:text-4xl">
+              <span className="mt-2 block text-2xl font-semibold text-steel-400 sm:text-3xl md:text-3xl lg:text-4xl">
                 FRC Team {team.number}
               </span>
             </motion.h1>
@@ -70,7 +70,7 @@ export function Hero({ team }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.25 }}
-              className="mt-6 max-w-xl text-base leading-relaxed text-steel-300 sm:text-lg"
+              className="mt-6 max-w-lg text-base leading-relaxed text-steel-300 sm:text-lg"
             >
               High-performance robotics from Westfield High School — building
               competitive machines and STEM leaders since {team.rookieYear}.
@@ -100,15 +100,15 @@ export function Hero({ team }: HeroProps) {
             initial={{ opacity: 0, scale: 0.9, x: 24 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.65, delay: 0.15 }}
-            className="flex shrink-0 justify-center md:justify-end"
+            className="flex shrink-0 justify-center md:ml-auto md:justify-end md:pr-0 lg:pr-2"
           >
             <Image
               src={team.logo}
               alt={`${team.name} logo`}
-              width={420}
-              height={420}
+              width={560}
+              height={560}
               priority
-              className="h-44 w-44 object-contain drop-shadow-[0_0_40px_rgba(212,175,55,0.35)] sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-80 lg:w-80"
+              className="h-52 w-52 object-contain drop-shadow-[0_0_48px_rgba(212,175,55,0.4)] sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem]"
             />
           </motion.div>
         </div>
