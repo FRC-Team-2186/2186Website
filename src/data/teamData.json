@@ -52,7 +52,7 @@
       "id": "wins",
       "label": "District & Regional Wins",
       "value": 2,
-      "suffix": "+",
+      "suffix": "",
       "description": "Including Bethesda 2026"
     }
   ],

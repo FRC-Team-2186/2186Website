@@ -59,10 +59,10 @@ export function Navigation() {
             <TeamLogo size={36} priority className="h-9 w-9" />
           </span>
           <span className="hidden sm:flex flex-col leading-tight">
-            <span className="font-display text-sm font-semibold tracking-wide text-steel-100">
+            <span className="font-display text-sm font-bold tracking-wide text-steel-100">
               Dogs of Steel
             </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-steel-500">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-steel-500">
               FRC Team 2186
             </span>
           </span>
@@ -76,7 +76,7 @@ export function Navigation() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "relative px-3 py-2 text-sm font-medium transition-colors",
+                    "relative px-3 py-2 text-sm font-semibold transition-colors",
                     active
                       ? "text-electric"
                       : "text-steel-300 hover:text-steel-100"
@@ -141,7 +141,7 @@ export function Navigation() {
                       <Link
                         href={link.href}
                         className={cn(
-                          "block rounded-md px-3 py-3 text-base font-medium",
+                          "block rounded-md px-3 py-3 text-base font-semibold",
                           active
                             ? "bg-electric/10 text-electric"
                             : "text-steel-200 hover:bg-steel-800"

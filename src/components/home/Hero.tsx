@@ -46,7 +46,7 @@ export function Hero({ team }: HeroProps) {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-electric"
+              className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-electric"
             >
               {team.school} · {team.location}
             </motion.p>
@@ -55,13 +55,13 @@ export function Hero({ team }: HeroProps) {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display overflow-visible text-5xl font-bold leading-[1.05] tracking-tight text-steel-100 sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl"
+              className="font-display overflow-visible text-5xl font-extrabold leading-[1.05] tracking-tight text-steel-100 sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl"
             >
               {/* Extra inline padding prevents gradient/clipping of edge glyphs (e.g. G) */}
               <span className="block overflow-visible py-1 pr-[0.12em] text-gradient-steel">
                 Dogs of Steel
               </span>
-              <span className="mt-2 block text-2xl font-semibold text-steel-400 sm:text-3xl md:text-3xl lg:text-4xl">
+              <span className="mt-2 block text-2xl font-bold text-steel-400 sm:text-3xl md:text-3xl lg:text-4xl">
                 FRC Team {team.number}
               </span>
             </motion.h1>
@@ -108,7 +108,7 @@ export function Hero({ team }: HeroProps) {
               width={640}
               height={640}
               priority
-              className="h-60 w-60 object-contain drop-shadow-[0_0_52px_rgba(212,175,55,0.42)] sm:h-72 sm:w-72 md:h-96 md:w-96 lg:h-[30rem] lg:w-[30rem] xl:h-[34rem] xl:w-[34rem]"
+              className="h-64 w-64 object-contain drop-shadow-[0_0_52px_rgba(212,175,55,0.42)] sm:h-80 sm:w-80 md:h-[26rem] md:w-[26rem] lg:h-[32rem] lg:w-[32rem] xl:h-[36rem] xl:w-[36rem]"
             />
           </motion.div>
         </div>
