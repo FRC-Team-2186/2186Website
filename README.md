@@ -33,7 +33,7 @@ Edit **`src/data/teamData.json`** to update:
 | Sponsor tiers & logos | `sponsorTiers`, `sponsors` |
 | Media gallery | `gallery` |
 
-Replace placeholder images under `public/images/` and the sponsor PDF at `public/docs/sponsor-packet.pdf`.
+Replace placeholder images under `public/images/`.
 
 ## Scripts
 

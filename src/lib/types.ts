@@ -126,5 +126,4 @@ export interface TeamData {
   sponsorTiers: SponsorTier[];
   sponsors: Sponsor[];
   gallery: GalleryItem[];
-  sponsorPacketUrl: string;
 }
