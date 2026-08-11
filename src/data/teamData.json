@@ -162,7 +162,7 @@
     {
       "id": "2026",
       "year": 2026,
-      "name": "Steelhound",
+      "name": "Perry the Parasaurolophus",
       "game": "REBUILT",
       "description": "Our 2026 competition robot — district event winner at Bethesda MD.",
       "image": "/images/robots/2026-placeholder.svg",
@@ -178,9 +178,9 @@
     {
       "id": "2025",
       "year": 2025,
-      "name": "Greyhound",
+      "name": "2025 Robot",
       "game": "REEFSCAPE",
-      "description": "2025 robot Greyhound — Alexandria District Event Finalist.",
+      "description": "2025 competition robot — Alexandria District Event Finalist.",
       "image": "/images/robots/2025-placeholder.svg",
       "specs": {
         "drivebase": "Swerve Drive",
@@ -194,7 +194,7 @@
     {
       "id": "2024",
       "year": 2024,
-      "name": "Forge",
+      "name": "2024 Robot",
       "game": "CRESCENDO",
       "description": "CRESCENDO season robot built for note intake, shooting, and climbing.",
       "image": "/images/robots/2024-placeholder.svg",
@@ -208,7 +208,7 @@
     {
       "id": "2023",
       "year": 2023,
-      "name": "Volt",
+      "name": "2023 Robot",
       "game": "CHARGED UP",
       "description": "CHARGED UP robot focused on cone/cube scoring and charge station balance.",
       "image": "/images/robots/2023-placeholder.svg",
@@ -222,7 +222,7 @@
     {
       "id": "2022",
       "year": 2022,
-      "name": "Reactor",
+      "name": "2022 Robot",
       "game": "RAPID REACT",
       "description": "RAPID REACT cargo bot with hangar climb capability.",
       "image": "/images/robots/2022-placeholder.svg",
