@@ -64,7 +64,7 @@ export function Footer() {
 
         <div>
           <h3 className="font-display text-sm font-semibold uppercase tracking-[0.15em] text-steel-300">
-            Connect
+            Contact
           </h3>
           <div className="mt-4 flex flex-wrap gap-3">
             {team.socials.instagram && (

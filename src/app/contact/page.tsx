@@ -48,13 +48,15 @@ export default function ContactPage() {
               <ul className="mt-4 space-y-3">
                 {team.contact.headMentors.map((person) => (
                   <li key={person.email + person.name}>
-                    <p className="font-medium text-steel-200">{person.name}</p>
-                    <p className="text-sm text-steel-500">{person.role}</p>
+                    <p className="text-base font-semibold text-steel-200 sm:text-lg">
+                      {person.name}
+                    </p>
+                    <p className="text-base text-steel-500">{person.role}</p>
                     <a
                       href={`mailto:${person.email}`}
-                      className="mt-1 inline-flex items-center gap-1.5 text-sm text-electric hover:underline"
+                      className="mt-1 inline-flex items-center gap-1.5 text-base text-electric hover:underline sm:text-lg"
                     >
-                      <Mail className="h-3.5 w-3.5" />
+                      <Mail className="h-4 w-4" />
                       {person.email}
                     </a>
                   </li>
@@ -69,13 +71,15 @@ export default function ContactPage() {
               <ul className="mt-4 space-y-3">
                 {team.contact.finance.map((person) => (
                   <li key={person.email + person.name}>
-                    <p className="font-medium text-steel-200">{person.name}</p>
-                    <p className="text-sm text-steel-500">{person.role}</p>
+                    <p className="text-base font-semibold text-steel-200 sm:text-lg">
+                      {person.name}
+                    </p>
+                    <p className="text-base text-steel-500">{person.role}</p>
                     <a
                       href={`mailto:${person.email}`}
-                      className="mt-1 inline-flex items-center gap-1.5 text-sm text-electric hover:underline"
+                      className="mt-1 inline-flex items-center gap-1.5 text-base text-electric hover:underline sm:text-lg"
                     >
-                      <Mail className="h-3.5 w-3.5" />
+                      <Mail className="h-4 w-4" />
                       {person.email}
                     </a>
                   </li>

@@ -108,7 +108,7 @@ export function ContactForm() {
         {sending ? "Opening…" : "Send Message"}
         <Send className="h-4 w-4" />
       </Button>
-      <p className="text-xs text-steel-500">
+      <p className="text-sm text-steel-500 sm:text-base">
         Sends to {to} and CC’s {cc.join(", ")}.
       </p>
     </form>
