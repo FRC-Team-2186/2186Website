@@ -14,23 +14,30 @@
       "youtube": "https://www.youtube.com/@DogsOfSteel2186",
       "github": "https://github.com/FRC-Team-2186",
       "tba": "https://www.thebluealliance.com/team/2186",
-      "email": "mailto:frc2186@fcps.edu"
+      "email": "mailto:bblesser@fcps.edu"
     },
     "contact": {
       "headMentors": [
         {
           "name": "Head Mentor",
           "role": "Lead Mentor",
-          "email": "frc2186@fcps.edu"
+          "email": "bblesser@fcps.edu"
         }
       ],
       "finance": [
         {
           "name": "Finance Lead",
           "role": "Business / Finance",
-          "email": "frc2186@fcps.edu"
+          "email": "firstrobotics2186ballalr@gmail.com"
         }
-      ]
+      ],
+      "form": {
+        "to": "bblesser@fcps.edu",
+        "cc": [
+          "firstrobotics2186krishpv@gmail.com",
+          "firstrobotics2186ballalr@gmail.com"
+        ]
+      }
     }
   },
   "stats": [

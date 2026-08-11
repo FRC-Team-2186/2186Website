@@ -18,6 +18,10 @@ export interface TeamInfo {
   contact: {
     headMentors: ContactPerson[];
     finance: ContactPerson[];
+    form: {
+      to: string;
+      cc: string[];
+    };
   };
 }
 
