@@ -30,6 +30,11 @@ export function Leadership({ leaders }: LeadershipProps) {
             {leader.name}
           </h3>
           <p className="text-sm text-electric sm:text-base">{leader.role}</p>
+          {leader.bio ? (
+            <p className="mt-2 text-sm text-steel-400 sm:text-base">
+              {leader.bio}
+            </p>
+          ) : null}
         </motion.div>
       ))}
     </div>
