@@ -165,7 +165,7 @@
       "name": "Perry the Parasaurolophus",
       "game": "REBUILT",
       "description": "Our 2026 competition robot — district event winner at Bethesda MD.",
-      "image": "/images/robots/2026-placeholder.svg",
+      "image": "/images/robots/2026bot.png",
       "specs": {
         "drivebase": "Swerve Drive",
         "intake": "Ground + Station Intake",
@@ -181,7 +181,7 @@
       "name": "2025 Robot",
       "game": "REEFSCAPE",
       "description": "2025 competition robot — Alexandria District Event Finalist.",
-      "image": "/images/robots/2025-placeholder.svg",
+      "image": "/images/robots/225bot.jpeg",
       "specs": {
         "drivebase": "Swerve Drive",
         "intake": "Coral Intake",
