@@ -117,45 +117,45 @@
   "leadership": [
     {
       "id": "mentor-1",
-      "name": "Lead Mentor",
-      "role": "Head Mentor",
+      "name": "Roman Lowkis",
+      "role": "Lead Mentor",
       "type": "mentor",
-      "bio": "Guides team strategy, safety, and mentorship across all subteams."
+      "bio": ""
     },
     {
       "id": "mentor-2",
-      "name": "Engineering Mentor",
-      "role": "Mechanical Mentor",
+      "name": "Beverly Lesser",
+      "role": "Lead Mentor",
       "type": "mentor",
-      "bio": "Supports CAD, fabrication, and mechanism design."
+      "bio": ""
     },
     {
-      "id": "student-1",
-      "name": "Team Captain",
-      "role": "Student Captain",
-      "type": "student",
-      "bio": "Coordinates build season priorities and competition readiness."
+      "id": "mentor-3",
+      "name": "Kenny Raisbeck",
+      "role": "Engineering Mentor",
+      "type": "mentor",
+      "bio": ""
     },
     {
-      "id": "student-2",
-      "name": "Drive Coach",
-      "role": "Drive Team Lead",
-      "type": "student",
-      "bio": "Leads drive practice, strategy, and pit communication."
+      "id": "mentor-4",
+      "name": "Sindhura Mente",
+      "role": "Software Mentor",
+      "type": "mentor",
+      "bio": ""
     },
     {
-      "id": "student-3",
-      "name": "Software Lead",
-      "role": "Software Lead",
-      "type": "student",
-      "bio": "Owns robot code architecture and autonomous development."
+      "id": "mentor-5",
+      "name": "Dave Monachello",
+      "role": "Software Mentor",
+      "type": "mentor",
+      "bio": ""
     },
     {
-      "id": "student-4",
-      "name": "Business Lead",
-      "role": "Business Lead",
-      "type": "student",
-      "bio": "Runs sponsor outreach, budgeting, and community events."
+      "id": "mentor-6",
+      "name": "Jeanette Monachello",
+      "role": "Electrical Mentor",
+      "type": "mentor",
+      "bio": ""
     }
   ],
   "robots": [

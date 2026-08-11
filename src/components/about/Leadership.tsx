@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import type { Leader } from "@/lib/types";
-import { Badge } from "@/components/ui/badge";
 
 interface LeadershipProps {
   leaders: Leader[];
@@ -27,16 +26,10 @@ export function Leadership({ leaders }: LeadershipProps) {
               .slice(0, 2)
               .join("")}
           </div>
-          <div className="mb-2">
-            <Badge variant={leader.type === "mentor" ? "orange" : "default"}>
-              {leader.type === "mentor" ? "Mentor" : "Student"}
-            </Badge>
-          </div>
           <h3 className="font-display text-lg font-semibold text-steel-100">
             {leader.name}
           </h3>
-          <p className="text-sm text-electric">{leader.role}</p>
-          <p className="mt-2 text-sm text-steel-400">{leader.bio}</p>
+          <p className="text-sm text-electric sm:text-base">{leader.role}</p>
         </motion.div>
       ))}
     </div>

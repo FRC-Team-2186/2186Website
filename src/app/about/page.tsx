@@ -46,7 +46,7 @@ export default function AboutPage() {
 
         <section className="mt-16">
           <h2 className="font-display mb-8 text-2xl font-bold text-steel-100">
-            Mentors & Student Leadership
+            Mentors
           </h2>
           <Leadership leaders={leadership} />
         </section>
