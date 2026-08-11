@@ -30,10 +30,10 @@ export function Footer() {
               <TeamLogo size={40} className="h-10 w-10" />
             </span>
             <div>
-              <p className="font-display text-lg font-semibold text-steel-100">
+              <p className="font-display text-lg font-bold text-steel-100">
                 Dogs of Steel
               </p>
-              <p className="text-xs text-steel-500">
+              <p className="text-xs font-semibold text-steel-500">
                 {team.school} · {team.location}
               </p>
             </div>
