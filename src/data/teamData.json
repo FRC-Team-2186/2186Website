@@ -170,7 +170,7 @@
         "drivebase": "Swerve Drive",
         "intake": "Ground + Station Intake",
         "endEffector": "Multi-gamepiece Manipulator",
-        "weight": "~120 lbs"
+        "weight": "~100 lbs"
       },
       "tbaUrl": "https://www.thebluealliance.com/team/2186/2026",
       "awards": ["FCH District Bethesda MD Event Winner"]
@@ -186,7 +186,7 @@
         "drivebase": "Swerve Drive",
         "intake": "Coral Intake",
         "endEffector": "Elevator + Coral Manipulator",
-        "weight": "~115 lbs"
+        "weight": "~100 lbs"
       },
       "tbaUrl": "https://www.thebluealliance.com/team/2186/2025",
       "awards": ["CHS District Alexandria VA Event Finalist"]
