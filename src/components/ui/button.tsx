@@ -11,11 +11,11 @@ const buttonVariants = cva(
         default:
           "bg-electric text-steel-900 hover:bg-electric/90 glow-electric",
         secondary:
-          "bg-steel-700 text-steel-100 hover:bg-steel-500/40 border border-steel-500/40",
+          "bg-steel-700 text-steel-100 hover:bg-steel-600 border border-steel-600",
         outline:
           "border border-electric/50 text-electric bg-transparent hover:bg-electric/10",
         orange:
-          "bg-neon-orange text-white hover:bg-neon-orange-soft glow-orange",
+          "bg-electric text-steel-900 hover:bg-neon-orange glow-electric",
         ghost: "text-steel-200 hover:bg-steel-700/60 hover:text-white",
         link: "text-electric underline-offset-4 hover:underline",
       },
