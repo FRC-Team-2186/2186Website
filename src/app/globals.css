@@ -1,28 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand palette — Dogs of Steel */
-  --steel-900: #0b0e10;
-  --steel-850: #12161a;
-  --steel-800: #1a2024;
-  --steel-700: #2c3539;
-  --steel-600: #3d4a50;
-  --steel-500: #708090;
-  --steel-400: #9aa7b2;
-  --steel-300: #b8c2ca;
-  --steel-200: #d5dde3;
-  --steel-100: #eef2f5;
+  /* Brand palette — Dogs of Steel (Black & Gold) */
+  --steel-900: #050505;
+  --steel-850: #0a0a0a;
+  --steel-800: #121212;
+  --steel-700: #1c1c1c;
+  --steel-600: #2a2a2a;
+  --steel-500: #6b6b6b;
+  --steel-400: #9a9a9a;
+  --steel-300: #bdbdbd;
+  --steel-200: #e0e0e0;
+  --steel-100: #f5f5f5;
 
-  --electric: #00d2ff;
-  --electric-deep: #0066ff;
-  --neon-orange: #ff5a1f;
-  --neon-orange-soft: #ff8a4c;
+  /* Primary accent: gold */
+  --electric: #d4af37;
+  --electric-deep: #b8860b;
+  /* Secondary accent: warmer gold highlight */
+  --neon-orange: #e8c547;
+  --neon-orange-soft: #f0d978;
 
   --background: var(--steel-900);
   --foreground: var(--steel-100);
   --muted: var(--steel-500);
   --card: var(--steel-800);
-  --border: rgba(112, 128, 144, 0.35);
+  --border: rgba(212, 175, 55, 0.22);
   --ring: var(--electric);
 
   --font-display: var(--font-space-grotesk);
@@ -77,55 +79,55 @@ h4,
   letter-spacing: -0.02em;
 }
 
-/* Metallic mesh atmosphere */
+/* Black & gold atmosphere mesh */
 .bg-steel-mesh {
   background-color: var(--steel-900);
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 210, 255, 0.18), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(255, 90, 31, 0.08), transparent),
-    linear-gradient(180deg, rgba(44, 53, 57, 0.4) 0%, transparent 40%),
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 175, 55, 0.16), transparent),
+    radial-gradient(ellipse 55% 40% at 100% 0%, rgba(184, 134, 11, 0.1), transparent),
+    linear-gradient(180deg, rgba(28, 28, 28, 0.55) 0%, transparent 40%),
     repeating-linear-gradient(
       0deg,
       transparent,
       transparent 47px,
-      rgba(112, 128, 144, 0.04) 47px,
-      rgba(112, 128, 144, 0.04) 48px
+      rgba(212, 175, 55, 0.03) 47px,
+      rgba(212, 175, 55, 0.03) 48px
     ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 47px,
-      rgba(112, 128, 144, 0.04) 47px,
-      rgba(112, 128, 144, 0.04) 48px
+      rgba(212, 175, 55, 0.03) 47px,
+      rgba(212, 175, 55, 0.03) 48px
     );
 }
 
 .bg-hero-overlay {
   background:
-    linear-gradient(180deg, rgba(11, 14, 16, 0.55) 0%, rgba(11, 14, 16, 0.75) 55%, rgba(11, 14, 16, 0.98) 100%),
-    linear-gradient(90deg, rgba(11, 14, 16, 0.7) 0%, transparent 50%, rgba(11, 14, 16, 0.4) 100%);
+    linear-gradient(180deg, rgba(5, 5, 5, 0.55) 0%, rgba(5, 5, 5, 0.78) 55%, rgba(5, 5, 5, 0.98) 100%),
+    linear-gradient(90deg, rgba(5, 5, 5, 0.75) 0%, transparent 50%, rgba(5, 5, 5, 0.45) 100%);
 }
 
 .text-gradient-electric {
-  background: linear-gradient(135deg, #ffffff 0%, var(--electric) 50%, var(--electric-deep) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--electric) 45%, var(--electric-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-gradient-steel {
-  background: linear-gradient(135deg, #ffffff 0%, var(--steel-400) 100%);
+  background: linear-gradient(135deg, #ffffff 10%, var(--electric) 55%, #c5a028 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .glow-electric {
-  box-shadow: 0 0 24px rgba(0, 210, 255, 0.25);
+  box-shadow: 0 0 24px rgba(212, 175, 55, 0.28);
 }
 
 .glow-orange {
-  box-shadow: 0 0 24px rgba(255, 90, 31, 0.3);
+  box-shadow: 0 0 24px rgba(232, 197, 71, 0.28);
 }
 
 .section-pad {
@@ -158,6 +160,6 @@ h4,
 
 /* Selection */
 ::selection {
-  background: rgba(0, 210, 255, 0.35);
-  color: white;
+  background: rgba(212, 175, 55, 0.4);
+  color: #050505;
 }

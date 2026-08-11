@@ -231,7 +231,7 @@
       "id": "platinum",
       "name": "Platinum",
       "amount": "$5,000+",
-      "color": "#E8EEF2",
+      "color": "#F5E6A3",
       "benefits": [
         "Large logo on robot & team shirts",
         "Homepage & sponsor page feature",
@@ -256,7 +256,7 @@
       "id": "silver",
       "name": "Silver",
       "amount": "$1,000+",
-      "color": "#C0C7CE",
+      "color": "#C5A028",
       "benefits": [
         "Logo on team shirts",
         "Website listing",
@@ -267,7 +267,7 @@
       "id": "bronze",
       "name": "Bronze",
       "amount": "$500+",
-      "color": "#CD7F32",
+      "color": "#8B7355",
       "benefits": [
         "Website listing",
         "End-of-season thank you"

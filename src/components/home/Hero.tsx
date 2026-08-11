@@ -19,9 +19,9 @@ export function Hero({ team }: HeroProps) {
           className="absolute inset-0 scale-105 bg-cover bg-center"
           style={{
             backgroundImage: `
-              linear-gradient(135deg, rgba(0, 102, 255, 0.15) 0%, transparent 40%),
-              linear-gradient(225deg, rgba(255, 90, 31, 0.12) 0%, transparent 35%),
-              url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%231a2024'/%3E%3Cstop offset='1' stop-color='%230b0e10'/%3E%3C/linearGradient%3E%3Cpattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%23708090' stroke-opacity='0.15' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='1200' height='800' fill='url(%23g)'/%3E%3Crect width='1200' height='800' fill='url(%23grid)'/%3E%3Ccircle cx='900' cy='280' r='180' fill='%2300d2ff' fill-opacity='0.06'/%3E%3Ccircle cx='200' cy='500' r='220' fill='%23ff5a1f' fill-opacity='0.05'/%3E%3Cpath d='M100 650 L350 400 L500 520 L750 220 L950 380 L1100 180' fill='none' stroke='%2300d2ff' stroke-opacity='0.25' stroke-width='3'/%3E%3C/svg%3E")
+              linear-gradient(135deg, rgba(212, 175, 55, 0.14) 0%, transparent 40%),
+              linear-gradient(225deg, rgba(184, 134, 11, 0.1) 0%, transparent 35%),
+              url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23121212'/%3E%3Cstop offset='1' stop-color='%23050505'/%3E%3C/linearGradient%3E%3Cpattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%23d4af37' stroke-opacity='0.12' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='1200' height='800' fill='url(%23g)'/%3E%3Crect width='1200' height='800' fill='url(%23grid)'/%3E%3Ccircle cx='900' cy='280' r='180' fill='%23d4af37' fill-opacity='0.07'/%3E%3Ccircle cx='200' cy='500' r='220' fill='%23b8860b' fill-opacity='0.05'/%3E%3Cpath d='M100 650 L350 400 L500 520 L750 220 L950 380 L1100 180' fill='none' stroke='%23d4af37' stroke-opacity='0.28' stroke-width='3'/%3E%3C/svg%3E")
             `,
           }}
         />
