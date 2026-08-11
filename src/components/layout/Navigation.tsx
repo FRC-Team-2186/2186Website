@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { TeamLogo } from "@/components/layout/TeamLogo";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -54,8 +55,8 @@ export function Navigation() {
     >
       <nav className="section-pad container-max relative z-[61] flex h-16 items-center justify-between md:h-[4.5rem]">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-md border border-electric/40 bg-steel-800 font-display text-sm font-bold text-electric transition group-hover:glow-electric">
-            2186
+          <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-electric/40 bg-steel-800 transition group-hover:glow-electric">
+            <TeamLogo size={36} priority className="h-9 w-9" />
           </span>
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="font-display text-sm font-semibold tracking-wide text-steel-100">

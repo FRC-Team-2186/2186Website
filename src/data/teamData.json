@@ -6,6 +6,7 @@
     "location": "Chantilly, VA",
     "district": "FIRST Chesapeake",
     "rookieYear": 2007,
+    "logo": "/images/gallery/logo-3009955608_5f67a053aab5b.png",
     "mission": "Dogs of Steel inspires students to become leaders in STEM through hands-on robotics, collaboration, and gracious professionalism. We build competitive robots — and the next generation of engineers, designers, and innovators.",
     "history": "Founded in 2007 at Westfield High School, FRC Team 2186 Dogs of Steel has competed for nearly two decades in the FIRST Chesapeake district. From our early seasons to recent district event victories, we combine mechanical grit with software precision and a strong outreach culture that brings STEM to our community.",
     "socials": {
@@ -313,6 +314,14 @@
     }
   ],
   "gallery": [
+    {
+      "id": "logo",
+      "title": "Dogs of Steel Team Logo",
+      "type": "photo",
+      "src": "/images/gallery/logo-3009955608_5f67a053aab5b.png",
+      "tags": ["team"],
+      "year": 2026
+    },
     {
       "id": "g1",
       "title": "Bethesda District Event 2026",
