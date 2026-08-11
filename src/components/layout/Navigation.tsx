@@ -62,7 +62,7 @@ export function Navigation() {
             <span className="font-display text-sm font-bold tracking-wide text-steel-100">
               Dogs of Steel
             </span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-steel-500">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] sm:text-sm text-steel-500">
               FRC Team 2186
             </span>
           </span>

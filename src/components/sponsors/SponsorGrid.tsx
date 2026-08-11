@@ -42,7 +42,7 @@ export function SponsorGrid({
             <span className="font-display text-lg font-semibold text-steel-100">
               {sponsor.name}
             </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-steel-500">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-steel-500 sm:text-sm">
               {sponsor.tier}
             </span>
           </motion.a>

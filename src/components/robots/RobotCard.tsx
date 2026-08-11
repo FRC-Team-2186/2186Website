@@ -55,7 +55,7 @@ export function RobotCard({ robot, index = 0 }: RobotCardProps) {
             </div>
           </div>
           <div className="p-4">
-            <p className="text-xs uppercase tracking-[0.18em] text-electric">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-electric">
               {robot.game}
             </p>
             <h3 className="font-display mt-1 text-xl font-semibold text-steel-100">
@@ -126,7 +126,7 @@ export function RobotCard({ robot, index = 0 }: RobotCardProps) {
 function Spec({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-md border border-steel-500/25 bg-steel-900/50 p-3">
-      <dt className="text-[10px] uppercase tracking-[0.18em] text-steel-500">
+      <dt className="text-xs font-semibold uppercase tracking-[0.18em] text-steel-500 sm:text-sm">
         {label}
       </dt>
       <dd className="mt-1 text-sm font-medium text-steel-200">{value}</dd>

@@ -39,7 +39,7 @@ export function Gallery({ items }: GalleryProps) {
             type="button"
             onClick={() => setFilter(f.id)}
             className={cn(
-              "rounded-md border px-3 py-1.5 text-sm font-medium transition",
+              "rounded-md border px-3 py-1.5 text-base font-medium transition",
               filter === f.id
                 ? "border-electric/50 bg-electric/15 text-electric"
                 : "border-steel-500/35 text-steel-400 hover:border-steel-400 hover:text-steel-200"
@@ -75,7 +75,7 @@ export function Gallery({ items }: GalleryProps) {
                 <p className="font-display text-base font-semibold text-steel-100">
                   {item.title}
                 </p>
-                <p className="mt-1 text-xs uppercase tracking-[0.15em] text-steel-500">
+                <p className="mt-1 text-sm font-semibold uppercase tracking-[0.15em] text-steel-500">
                   {item.year} · {item.tags.join(" · ")}
                 </p>
               </figcaption>

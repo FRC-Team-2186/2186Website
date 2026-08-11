@@ -70,11 +70,11 @@ export function StatsCounter({ stats }: StatsCounterProps) {
                 inView={inView}
               />
             </p>
-            <p className="mt-2 font-display text-sm font-semibold uppercase tracking-[0.12em] text-steel-200">
+            <p className="mt-2 font-display text-base font-bold uppercase tracking-[0.12em] text-steel-200 sm:text-lg">
               {stat.label}
             </p>
             {stat.description && (
-              <p className="mt-1 text-sm text-steel-500">{stat.description}</p>
+              <p className="mt-1 text-base text-steel-500">{stat.description}</p>
             )}
           </motion.div>
         ))}
