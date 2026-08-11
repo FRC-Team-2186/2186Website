@@ -100,15 +100,15 @@ export function Hero({ team }: HeroProps) {
             initial={{ opacity: 0, scale: 0.9, x: 24 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.65, delay: 0.15 }}
-            className="flex shrink-0 justify-center md:ml-auto md:justify-end md:pr-0 lg:pr-2"
+            className="flex shrink-0 justify-center md:ml-auto md:mr-4 md:justify-end md:-translate-x-4 lg:mr-8 lg:-translate-x-8 xl:-translate-x-10"
           >
             <Image
               src={team.logo}
               alt={`${team.name} logo`}
-              width={560}
-              height={560}
+              width={640}
+              height={640}
               priority
-              className="h-52 w-52 object-contain drop-shadow-[0_0_48px_rgba(212,175,55,0.4)] sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem]"
+              className="h-60 w-60 object-contain drop-shadow-[0_0_52px_rgba(212,175,55,0.42)] sm:h-72 sm:w-72 md:h-96 md:w-96 lg:h-[30rem] lg:w-[30rem] xl:h-[34rem] xl:w-[34rem]"
             />
           </motion.div>
         </div>
