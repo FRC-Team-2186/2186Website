@@ -236,49 +236,35 @@
   ],
   "sponsorTiers": [
     {
-      "id": "platinum",
-      "name": "Platinum",
-      "amount": "$5,000+",
-      "color": "#F5E6A3",
-      "benefits": [
-        "Large logo on robot & team shirts",
-        "Homepage & sponsor page feature",
-        "Pit banner placement",
-        "Invite to demos & competition events",
-        "Social media shoutouts all season"
-      ]
-    },
-    {
-      "id": "gold",
-      "name": "Gold",
-      "amount": "$2,500+",
-      "color": "#D4AF37",
-      "benefits": [
-        "Logo on robot & shirts",
-        "Sponsor page listing",
-        "Event recognition",
-        "Season social media mentions"
-      ]
-    },
-    {
-      "id": "silver",
-      "name": "Silver",
-      "amount": "$1,000+",
-      "color": "#C5A028",
-      "benefits": [
-        "Logo on team shirts",
-        "Website listing",
-        "Thank-you recognition"
-      ]
-    },
-    {
       "id": "bronze",
       "name": "Bronze",
       "amount": "$500+",
       "color": "#8B7355",
       "benefits": [
-        "Website listing",
-        "End-of-season thank you"
+        "Logo placed on robot, website, and promotional materials"
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "amount": "$1500+",
+      "color": "#C0C0C0",
+      "benefits": [
+        "Invitation to Sponsor Appreciation Events",
+        "Logo placed prominently on robot, website, and promotional materials",
+        "All Bronze benefits"
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "amount": "$3000+",
+      "color": "#D4AF37",
+      "benefits": [
+        "Request Team 2186 Robot to appear at company events and demonstrate capabilities",
+        "Logo placed most prominently on robot and promotional materials",
+        "Recognition in official team name announced at competitions",
+        "All Bronze and Silver benefits"
       ]
     }
   ],
@@ -286,13 +272,13 @@
     {
       "id": "leidos",
       "name": "Leidos",
-      "tier": "platinum",
+      "tier": "gold",
       "website": "https://www.leidos.com"
     },
     {
       "id": "boeing",
       "name": "Boeing",
-      "tier": "platinum",
+      "tier": "gold",
       "website": "https://www.boeing.com"
     },
     {

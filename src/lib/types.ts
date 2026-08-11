@@ -93,7 +93,7 @@ export interface SponsorTier {
 export interface Sponsor {
   id: string;
   name: string;
-  tier: "platinum" | "gold" | "silver" | "bronze" | "partner";
+  tier: "gold" | "silver" | "bronze" | "partner";
   logo?: string;
   website?: string;
 }
