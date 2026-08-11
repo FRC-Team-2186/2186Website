@@ -53,10 +53,10 @@ export function Navigation() {
           : "bg-transparent"
       )}
     >
-      <nav className="section-pad container-max relative z-[61] flex h-16 items-center justify-between md:h-[4.5rem]">
+      <nav className="section-pad container-max relative z-[61] flex h-[4.25rem] items-center justify-between md:h-[5rem]">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-electric/40 bg-steel-800 transition group-hover:glow-electric">
-            <TeamLogo size={36} priority className="h-9 w-9" />
+          <span className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-electric/40 bg-steel-800 transition group-hover:glow-electric md:h-14 md:w-14">
+            <TeamLogo size={56} priority className="h-11 w-11 md:h-13 md:w-13" />
           </span>
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="font-display text-sm font-bold tracking-wide text-steel-100">
