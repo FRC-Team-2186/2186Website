@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,10 +40,26 @@ export function Hero({ team }: HeroProps) {
       </div>
 
       <div className="relative section-pad container-max flex min-h-[100svh] flex-col justify-center pb-24 pt-28">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.55 }}
+          className="mb-6"
+        >
+          <Image
+            src={team.logo}
+            alt={`${team.name} logo`}
+            width={140}
+            height={140}
+            priority
+            className="h-24 w-24 object-contain sm:h-28 sm:w-28 md:h-32 md:w-32"
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.05 }}
           className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-electric"
         >
           {team.school} · {team.location}

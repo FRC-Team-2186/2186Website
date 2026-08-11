@@ -5,6 +5,7 @@ export interface TeamInfo {
   location: string;
   district: string;
   rookieYear: number;
+  logo: string;
   mission: string;
   history: string;
   socials: {

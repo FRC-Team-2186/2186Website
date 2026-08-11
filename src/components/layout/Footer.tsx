@@ -6,6 +6,7 @@ import {
   InstagramIcon,
   YoutubeIcon,
 } from "@/components/icons/SocialIcons";
+import { TeamLogo } from "@/components/layout/TeamLogo";
 import teamData from "@/data/teamData.json";
 
 const FOOTER_LINKS = [
@@ -25,8 +26,8 @@ export function Footer() {
       <div className="section-pad container-max grid gap-10 py-14 md:grid-cols-3">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md border border-electric/40 bg-steel-800 font-display text-sm font-bold text-electric">
-              2186
+            <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-electric/40 bg-steel-800">
+              <TeamLogo size={40} className="h-10 w-10" />
             </span>
             <div>
               <p className="font-display text-lg font-semibold text-steel-100">

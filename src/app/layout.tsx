@@ -31,6 +31,10 @@ export const metadata: Metadata = {
     "FIRST Robotics",
     "Chantilly",
   ],
+  icons: {
+    icon: "/images/gallery/logo-3009955608_5f67a053aab5b.png",
+    apple: "/images/gallery/logo-3009955608_5f67a053aab5b.png",
+  },
 };
 
 export default function RootLayout({
