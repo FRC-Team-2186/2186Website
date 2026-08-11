@@ -24,19 +24,19 @@ export function SponsorTiers({ tiers }: SponsorTiersProps) {
             className="mb-1 h-1 w-12 rounded-full"
             style={{ backgroundColor: tier.color }}
           />
-          <h3 className="font-display mt-3 text-xl font-bold text-steel-100">
+          <h3 className="font-display mt-3 text-2xl font-bold text-steel-100 sm:text-3xl">
             {tier.name}
           </h3>
-          <p className="mt-1 text-sm font-semibold text-electric">
+          <p className="mt-1 text-base font-semibold text-electric sm:text-lg">
             {tier.amount}
           </p>
           <ul className="mt-5 flex-1 space-y-3">
             {tier.benefits.map((benefit) => (
               <li
                 key={benefit}
-                className="flex gap-2 text-sm leading-snug text-steel-300"
+                className="flex gap-2 text-base leading-snug text-steel-300"
               >
-                <Check className="mt-0.5 h-4 w-4 shrink-0 text-electric" />
+                <Check className="mt-0.5 h-5 w-5 shrink-0 text-electric" />
                 {benefit}
               </li>
             ))}

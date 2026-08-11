@@ -12,14 +12,14 @@ interface CountdownWidgetProps {
 
 function Unit({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex min-w-[4.5rem] flex-col items-center rounded-md border border-steel-500/35 bg-steel-900/70 px-3 py-3 sm:min-w-[5.5rem]">
+    <div className="flex min-w-[5.5rem] flex-col items-center rounded-md border border-steel-500/35 bg-steel-900/70 px-3 py-4 sm:min-w-[6.5rem] sm:px-4">
       <span
-        className="font-display text-2xl font-bold tabular-nums text-electric sm:text-3xl"
+        className="font-display text-4xl font-bold tabular-nums text-electric sm:text-5xl"
         suppressHydrationWarning
       >
         {String(value).padStart(2, "0")}
       </span>
-      <span className="mt-1 text-[10px] uppercase tracking-[0.2em] text-steel-500">
+      <span className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-steel-500 sm:text-sm">
         {label}
       </span>
     </div>
