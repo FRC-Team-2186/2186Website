@@ -40,9 +40,25 @@ Replace placeholder images under `public/images/` and the sponsor PDF at `public
 | Command | Description |
 |---------|-------------|
 | `npm run dev` | Dev server |
-| `npm run build` | Production build |
-| `npm run start` | Serve production build |
+| `npm run build` | Next.js production build (`next build`) |
+| `npm run build:worker` | OpenNext Cloudflare worker build |
+| `npm run deploy` | Build worker + deploy to Cloudflare |
+| `npm run preview` | Build worker + preview locally in Workers runtime |
+| `npm run start` | Serve Next.js production build |
 | `npm run lint` | ESLint |
+
+### Cloudflare Workers Builds
+
+`opennextjs-cloudflare build` invokes `npm run build`, so **`build` must remain `next build`** (otherwise CI loops/hangs).
+
+In the Cloudflare dashboard, set:
+
+| Setting | Value |
+|---------|-------|
+| Build command | `npm run build` (or leave default) |
+| Deploy command | `npx opennextjs-cloudflare deploy` |
+
+Worker name is configured in `wrangler.jsonc` as `2186website`.
 
 ## Pages
 
